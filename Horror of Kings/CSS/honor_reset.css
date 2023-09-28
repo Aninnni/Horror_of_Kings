@@ -1,0 +1,22 @@
+  /* 样式重置,后面也有一些属性需要重置,一些常见的属性重置可以一开就抽出来 */
+  body, h1, h2, h3, p, br, ul, ol, li, dl, dd {
+    padding: 0;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color:#333;
+  }
+  ul, ol, li, dl, dd {
+    list-style: none;
+  }
+  img {
+    vertical-align: top;
+  }
+  h1, h2, h3 {
+    font-weight: 400;
+  }
+  /* 文字斜体重置 */
+  i,em {
+    font-style: normal;
+  }

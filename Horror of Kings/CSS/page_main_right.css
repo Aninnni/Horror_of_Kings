@@ -1,0 +1,127 @@
+.main .section-content {
+  display: flex;
+  justify-content: space-between;
+}
+.main .section-content .left-content {
+  width: 872px;
+  height: 554px;
+  /* background: pink; */
+}
+.main .section-content .right-content {
+  width: 295px;
+  height: 528px;
+  /* background: plum; */
+}
+.main .hero-shkin .new_hero .album {
+  display: block;
+}
+.hero-shkin .new_hero .new_hero_bottom {
+  padding: 10px 15px;
+  height: 47px;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  border-radius: 0 0 2px 2px;
+}
+.hero-shkin .new_hero .new_hero_bottom p {
+  text-align: left;
+  font-size: 12px;
+}
+.hero-shkin .new_hero .new_hero_bottom .new_hero_name {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+.hero-shkin .new_hero .hero_list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 49px;
+}
+.hero-shkin .new_hero .hero_list a {
+  display: block;
+  position: relative;
+}
+.hero-shkin .new_hero .hero_list a .cover {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /* 去查文档.文本竖着排,兼容性很好. */
+  writing-mode: vertical-lr;
+  color: #f3c258;
+  background-color: rgba(0,0,0,.8);
+  transition: opacity 300ms ease;
+}
+.hero-shkin .new_hero .hero_list a:hover .cover {
+  opacity: 1;
+}
+
+.main .main-schedule {
+  margin-top: 20px;
+}
+.section_header .header_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section_header .header_right .buy-ticket {
+color: #323235;
+width: 70px;
+height: 22px;
+line-height: 20px;   
+
+margin-right: 19px;    
+box-sizing: border-box;
+border: 1px solid #f3c258;  
+border-radius: 3px;
+text-align: center;
+text-indent: 20px;
+font-size: 14px;
+background: url(../honor-image/main_sprite.png) no-repeat -243px -85px;    
+}
+
+.main .main-schedule .schedule-time {
+/* 宽度占满整个元素 */
+width: 100%;
+font-size: 12px;
+text-align: center;
+border-collapse: collapse;
+}
+.main .main-schedule .schedule-time thead tr {
+background-color: #f5f5f5;
+height: 29px;
+line-height: 29px;
+font-size: 14px;
+color: #999;
+}
+.main .main-schedule .schedule-time tbody tr {
+border-bottom: 1px solid #e5e5e5;
+}
+.main .main-schedule .schedule-time tbody td {
+padding: 10px 6px;
+}
+.main .main-schedule .schedule-time tbody .team {
+margin-bottom: 4px;
+}
+.main .main-schedule .schedule-time tbody img {
+width: 25px;
+height: 25px;
+}
+.main .main-schedule .schedule-time td:nth-child(3) {
+font-size: 14px;
+color: #f3c258;
+}
+
+.main .main-ad a {
+display: block;
+margin: 21px 0;
+}
+.main .main-ad img {
+width: 293px;
+height: 159px;
+}

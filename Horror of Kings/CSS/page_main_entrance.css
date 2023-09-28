@@ -1,0 +1,23 @@
+.main .entrance-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 28px 0 34px 0;
+}
+.main .entrance-section .item {
+  width: 291px;
+  height: 134px;
+}
+.main .entrance-section .item a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+.main .entrance-section a img {
+  width: 100%;
+  height: 100%;
+  transition: transform 400ms ease;
+}
+.main .entrance-section a:hover img {
+  /* css搞动画 */
+  transform: scale(1.1);
+}

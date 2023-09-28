@@ -1,0 +1,211 @@
+/* 公共的样式 */
+body {
+  font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+
+  color: #323235;
+}
+/* wrapper中间包裹的区域 */
+.top_wrapper {
+  width: 990px;
+  margin: 0 auto;
+}
+.nav_wrapper {
+  width: 1300px;
+  height: 84px;
+  text-align: center;
+}
+.main_wrapper {
+  width: 1200px;
+  padding-top: 540px;
+  margin: 0 auto;
+}
+/* 文字设置不要换行常用3行 */
+.nowrap_overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 新闻类型图标 news-type */
+.news_type::before {
+  content: "";
+  display: inline-block;
+
+  width: 32px; 
+  height: 16px;
+  margin-right: 5px;
+
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+.news_type_hot::before {
+  content: "热门";
+  color: #ff3636;
+  border-color: #ff3636;
+}
+.news_type_notice::before {
+  content: "公告";
+  color: #f4be19;
+  border-color: #f4be19;
+}
+.news_type_news::before {
+  content: "新闻";
+  color: #1e96ab;
+  border-color: #1e96ab;
+}
+/* 比赛类图标match_type */
+.match_type::before {
+  content: "";
+  display: inline-block;
+  height: 19px;
+  margin-right: 12px;
+
+  line-height: 19px;
+  text-align: center;
+  font-size: 12px;
+
+  color: #999;
+  background: #e3e3e3;
+  border: 2px solid #e3e3e3;
+  border-radius: 10px;
+  padding: 0 2px;
+
+}
+.match_type_challege::before {
+  content: "挑战者杯";
+}
+
+
+  /* section_header头部和图标的公共样式 */
+  .section_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .section_header .header_left .title {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    /* 首行缩进 */
+    /* text-indent:33px; */
+    padding-left: 33px;
+  }
+  .section_header .header_left .title-icon-content {
+    color: #323235;
+    background: url(../honor-image/main_sprite.png) no-repeat 0 -106px;
+  }
+  .section_header .header_left .title-icon-match {
+    background: url(../honor-image/main_sprite.png) no-repeat 0 -184px;
+  }
+  .section_header .header_left .title-icon-hero {
+    background: url(../honor-image/main_sprite.png) no-repeat 0 -144px;
+  }
+   .section_header .header_left .title-icon-schedule {
+    background: url(../honor-image/main_sprite.png) no-repeat -157px -106px;
+   }
+
+  .section_header .header_right .more {
+    display: block;
+    background: url(../honor-image/main_sprite.png) no-repeat -252px 4px;
+    padding-left: 22px;
+    color: #999;
+  }
+  .section_header .header_right .more:hover {
+    color: #f3c258;
+  }
+
+
+  /* tab-control头部样式 */
+  .tab_control {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    line-height: 29px;
+    /* font-size: 14px; */
+    /* margin-bottom: 12px; */
+    background-color: #f5f5f5;
+  }
+  .tab_control > .item {
+    /* flex-grow:1;可以使内容等分 */
+    flex: 1;
+    color: #999;
+    text-align: center;
+    /* 指针:手 */
+    cursor: pointer; 
+    border-bottom: 3px solid transparent;
+  }
+  .tab_control > .item.item_wrap {
+    flex: 0 auto;
+    flex-grow: 0;
+    padding: 0 19px;
+  } 
+
+
+  /* .tab_control > .item.active, */
+  .tab_control > .item.active {
+    color: #333333;
+    border-bottom-color: #f3c258;
+  }
+  .tab_control > .line {
+    width: 1px;
+    height: 20px;
+    background-color: #e1e1e1;
+  }
+  /* tab_keyword的样式 */
+  .tab_keyword {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 0 9px;
+    margin-bottom: 8px;
+  }
+  .tab_keyword > .item {
+    height: 24px;
+    line-height: 24px;
+    margin: 0 8px 5px 0;
+    padding: 0 15px;
+    color: #333;
+    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+
+  }
+  .tab_keyword > .item:hover {
+    border-color: #f3c258;
+    background: #f3c258;
+    color: #fff;
+  }
+
+  /* 透明度动画 */
+  @keyframes opacityAnim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* 一些小图标 */
+  .icon_type{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 1px;
+    vertical-align: middle;
+
+    background: url(../honor-image/main_sprite.png) no-repeat;
+  }
+  .icon_type_hot {
+    background-position: -160px -68px;
+  }
+  .icon_type_fans {
+    background-position: -137px -68px;
+  }
+  .icon_type_guard {
+    background-position: -136px -5px;
+  }

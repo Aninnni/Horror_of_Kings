@@ -1,0 +1,126 @@
+.nav {
+  background: rgba(0,0,0,0.8);
+  
+  font-size: 18px;
+  position: relative;
+}
+.nav .area {
+  /* background: orange; */
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .left-area {
+  display: flex;
+}
+
+.nav .left-area .nav-logo a {
+  display: block;
+  text-indent: -9999px;
+  width: 200px;
+  height: 54px;
+  background: url(../honor-image/王者logo.png) no-repeat;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-right: 20px;
+}
+
+.nav .left-area .nav-list {
+  display: flex;
+}
+.nav .left-area .item {
+  width: 110px;
+  height: 84px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+/* hover状态a和desc颜色不一样的设置 */
+.nav .left-area .nav-list .item:hover a {
+  color: #e4b653;
+  background: url(../honor-image/main_sprite.png) no-repeat 0 0;
+}
+.nav .left-area .nav-list .item:hover .desc {
+  color: #91763f;
+}
+.nav .left-area .nav-list .item a {
+  display: block;
+  /* a变成block后,高度默认是被内容撑起来的,所以要设置h=100% */
+  height: 100%;
+  box-sizing: border-box;
+  padding: 20px 0 0;
+  color: #c9c9dd;
+}
+.nav .nav-list .desc {
+  display: block;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.nav .right-area {
+  display: flex;
+  align-items: center;
+}
+.nav .right-area .avatar img {
+  border: 1px solid #d9ad50;
+  border-radius: 42px;
+}
+.nav .right-area .info {
+  width: 130px;
+  height: 45px;
+  font-size: 14px;
+  text-align: left;
+  color: #858792;
+  margin-left: 10px;     
+}
+.nav .right-area .info a {
+  font-size: 16px;
+  color: #ffffff;
+  display: block;
+  padding-bottom: 2px;
+}
+
+.nav .dropmenu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 84px;
+  height: 0;
+  background: rgba(0,0,0,.7);
+  overflow: hidden;
+  transition: height 200ms ease-in ;
+}
+.nav:hover .dropmenu {
+  height: 285px;
+  
+}
+.nav .dropmenu .inner {
+  display: flex;
+  margin: 0 auto;
+  width: 940px;
+  height: 100%;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 15px 0 30px 50px;
+  
+}
+
+.nav .dropmenu .list {
+  width: 115px;
+  padding-top: 5px;
+  text-align: center;
+}
+.nav .dropmenu .list dd {
+  height: 30px;
+  line-height: 30px;
+}
+.nav .dropmenu .list a {
+  color: #c9c9dd;
+
+}
+.nav .dropmenu .list a:hover {
+  color: #f3c258;
+  text-decoration: underline;
+}

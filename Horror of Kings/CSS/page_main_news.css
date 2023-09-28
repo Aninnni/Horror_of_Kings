@@ -1,0 +1,143 @@
+.main {
+  font-size: 14px;
+  /* display: flex; */
+}
+.main .main-news {
+  display: flex;
+  /* width: 1200px; */
+  /* height: 342px; */
+  overflow: hidden;
+  background: url(../honor-image/news_bg.png) no-repeat left top;
+  /* 相对定位:还没写 */
+}
+/* pic部分 */
+.main-news .news-pic {
+  width: 605px;
+  background: #363636;
+  overflow: hidden;
+}
+.main-news .news-pic .advpic {
+  display: flex;
+  width: 604px;
+  /* height: 298px; */
+  /* overflow: hidden;  写这里不对,写上面.*/
+}
+.main-news .news-pic .advpic .item {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.main-news .news-pic .advpic .item a {
+  display: block;
+}
+.main-news .news-pic .advpic .item a img {
+  /* width: 604px; */
+  width: 100%;
+}
+/* btn部分 */
+.main-news .news-pic .advbtn {
+  width: 604px;
+  display: flex;
+}
+.main-news .news-pic .advbtn .item {
+  flex: 1;
+  text-align: center;
+}
+.main-news .news-pic .advbtn .item a {
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  flex: 1;
+  color: #b1b2be;
+}
+.main-news .news-pic .advbtn .item.active a,
+.main-news .news-pic .advbtn a:hover
+{
+  background: rgba(225, 225, 225, .15);
+  color: #f3c258;
+}
+.main-news .news-area {
+  /* flex-shrink的简写.自适应弹性盒子的宽度,初始值是1,不能是负数. */
+  flex: 1;
+  overflow: hidden;
+  padding: 0 17px;  
+}
+.main-news .news-area .listhead {
+  display: flex;
+  height: 48px;
+  border-bottom: 1px solid #000;
+}
+.main-news .news-area .listhead .item {
+  width: 52px;
+  /* height: 45px; */
+}
+.main-news .news-area .listhead .item a {
+  display: block;
+  color: #b8b9c5;
+  box-sizing: border-box;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  /* 新闻动画效果 */
+  transition: border-bottom 150ms linear;
+}
+.main-news .news-area .listhead .item.active a,
+.main-news .news-area .listhead .item:not(.more) a:hover {
+  color: #f3c258;
+  border-bottom: 3px solid #f3c258;
+}
+.main-news .news-area .newstitle {
+  height: 36px;
+  line-height: 36px;
+  /* margin: 18px 0 11px; */
+  margin: 18px 0 11px;
+  padding: 0 15px;
+  background-color: #414046;
+}
+.main-news .news-area .newstitle > a {
+  display: block;
+  color: #f3c258;
+  font-size: 18px;
+  /* line-height: 36px; */
+}
+.main-news .news-area .news-list {
+  margin-top: 15px;
+}
+.main-news .news-area .news-list .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+.main-news .news-area .news-list .item .desc {
+  /* flex: 1; */
+  color: #b8b9c5
+}
+.main-news .news-area .news-list .item .date {
+  padding: 0 8px;
+  color: #999;
+  font-size: 12px;
+}
+.main-news .download {
+  width: 236px;
+  /* background-color:gold; */
+}
+.main-news .download a {
+  display: block;
+  background: url(../honor-image/main_sprite.png) no-repeat;
+}
+.main-news .download a.download_btn {
+  height: 128px;
+  background-position: 0 -219px;
+}
+.main-news .download a.guard_btn {
+  height: 106px;
+  background-position: 0 -350px;
+}
+.main-news .download a.experience_btn {
+  height: 108px;
+  background-position: 0 -461px;
+}

@@ -1,0 +1,150 @@
+.right-nav {
+  /* 固定定位 */
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 0;
+  width: 254px;
+  height: 494px;
+  background: url(../honor-image/r_nav.webp) no-repeat;
+}
+.right-nav .right-list {
+  position: relative;
+  left: 60px;
+}
+
+.right-nav .right-list .item {
+  width: 117px;
+  height: 38px;
+  background: url(../honor-image/right-all.webp) no-repeat;
+}
+.right-nav .right-list .item a {
+  height: 100%;
+  display: block;
+}
+
+.right-nav .right-list .item.code {
+  height: 132px;
+  margin: 1px 0 0 0;
+  padding: 2px 0 0 0;
+  background-position: -243px 0;
+  text-align: center;
+}
+.right-nav .right-list .item.code img {
+  width: 107px;
+  height: 107px;
+  margin: 0 5px;
+  border-radius: 2px 2px 2px 2px;
+}
+
+.right-nav .right-list .item.yd {
+  background-position: -243px -134px;
+  position: relative;
+}
+
+.QRcode {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  background: url(../honor-image/right-all.webp) no-repeat 0 -416px;
+  padding-top: 7px;
+  transition: opacity 300ms ease;
+  opacity: 0;
+}
+.QRcode img {
+  width: 101px;
+  height: 100px;
+  margin-bottom: 6px;
+}
+.QRcode p {
+  width: 101px;
+  line-height: 17px;
+  color: #dcdcdc;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+}  
+.QRcode span {
+  color: #cd974b;
+}  
+
+.right-nav .right-list .item.yd .yd-code {
+  position: absolute;
+  top: -66px;
+  left: -116px;
+  width: 115px;
+  height: 144px;
+  /* opacity: 0; */
+}
+.right-nav .right-list .item.weibo .wb-code {
+  position: absolute;
+  top: -71px;
+  left: -116px;
+  width: 115px;
+  height: 144px;
+  /* opacity: 0; */
+}
+.right-nav .right-list .item.gzh .gzh-code {
+  position: absolute;
+  top: -76px;
+  left: -116px;
+  width: 115px;
+  height: 144px;   
+}
+.right-nav .right-list .item.sph .sph-code {
+  position: absolute;
+  top: -76px;
+  left: -116px;
+  width: 115px;
+  height: 144px;   
+}
+
+
+
+
+.right-nav .right-list .item.yd:hover .QRcode.yd-code,
+.right-nav .right-list .item.yd:hover .QRcode.yd-code img {
+  /* display: inline-block; */
+  opacity: 1;
+}
+.right-nav .right-list .item.weibo:hover .QRcode.wb-code,
+.right-nav .right-list .item.weibo:hover .QRcode.wb-code img {
+  /* display: inline-block; */
+  opacity: 1;
+}
+.right-nav .right-list .item.gzh:hover .QRcode.gzh-code,
+.right-nav .right-list .item.gzh:hover .QRcode.gzh-code img {
+  /* display: inline-block; */
+  opacity: 1;
+}
+.right-nav .right-list .item.sph:hover .QRcode.sph-code,
+.right-nav .right-list .item.sph:hover .QRcode.sph-code img {
+  /* display: inline-block; */
+  opacity: 1;
+}
+
+
+.right-nav .right-list .item.yd:hover  {
+  background-position: -243px -172px;
+}
+.right-nav .right-list .item.weibo {
+  position: relative;
+  background-position: -122px -120px;
+}
+.right-nav .right-list .item.weibo:hover {
+  background-position: -122px -240px ;
+}
+.right-nav .right-list .item.gzh {
+  position: relative;
+  background-position: -122px -160px;
+}
+.right-nav .right-list .item.gzh:hover {
+  background-position: -122px 200px;
+}
+.right-nav .right-list .item.sph {
+  position: relative;
+  background-position: -122px 0;
+}
+.right-nav .right-list .item.sph:hover {
+  background-position: -122px -42px;
+}

@@ -1,0 +1,102 @@
+.top {
+  border-bottom: 1px solid #f5f5f5;
+}
+.top .area {
+  /* background-color: orange; */
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 41px;
+  line-height: 41px;
+}
+.top .left-area {
+  display: flex;
+}
+.top .left-area .logo a {
+  position: relative;
+  z-index: 11;
+  display: block;
+  width: 150px;
+  text-indent: -9999px;
+  background-image: url(../honor-image/腾讯logo.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.top .left-area .recommed {
+  position: relative;
+}
+.top .left-area .recommed-ad {
+  width: 100%;
+  position: absolute;
+  left: -145px;
+  top: 0;
+  z-index: 10;
+  display: none;
+}
+.top .left-area .recommed:hover .recommed-ad {
+  display: block;
+}
+
+.top .right-area {
+  display: flex;
+  position: relative;
+  color: #464646;
+}
+.top .right-area .guard {
+  margin-left: 30px;
+}
+.top .right-area .guard-icon::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: url(../honor-image/top_sprite.png);
+  background-repeat: no-repeat;
+  background-position: -30px 0;
+}
+
+.top .right-area .guard a {
+  display: block;
+  font-size: 14px;
+}
+.top .right-area .guard:hover {
+  color: red;
+}
+.top .right-area .ranking {
+  font-size: 14px;
+  margin-left: 20px;
+  padding-right: 30px;
+  display: block;
+}
+.top .right-area .ranking::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  right: 3px;
+  margin: auto 0;
+  background: url(../honor-image/top_sprite.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: .1;
+  transform: rotate(90deg);
+}
+.top .right-area .ranking .dropdown iframe {
+  width: 708px;
+  height: 582px;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: 41px;
+  display: none;
+}
+.top .right-area .ranking:hover .dropdown iframe {
+  display: block;
+  animation: opacityAnim 400ms ease forwards;
+}
